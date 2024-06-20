@@ -1,0 +1,280 @@
+.todo-container{
+    width: 60vw;
+    height: 90vh;
+    background-color: #0D0D0D;
+    border-radius: 40px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar{
+    background-color: #0D0D0D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    margin: 40px;
+}
+
+.navbar .logo-text, .logout-icon{
+    padding: 10px 60px;
+}
+
+.logo-text {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: #DEDEDE;
+    letter-spacing: -1px;
+}
+
+Link {
+    text-decoration: none;
+}
+
+.logo-text .two{
+    color: #F55633;
+    text-decoration: none;
+}
+
+.logo-text .one{
+    color: #DEDEDE;
+    text-decoration: none;
+}
+
+.logout-icon{
+    font-size: 25px;
+}
+
+.topbar{
+    border: 1px solid #928774;
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.main-text{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 22px;
+    color: #E8D6B8;
+    letter-spacing: -1px;
+}
+
+.small-text{
+    font-family: Poppins;
+    font-weight: 400;
+    /* font-size: 22px; */
+    color: #E8D6B8;
+    letter-spacing: 2px;
+}
+
+.count-container{
+    background-color: #F55833;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0D0D0D;
+}
+
+.todo-input-container{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.todo-input-container input{
+    width: 530px;
+    height: 45px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #928774;
+    letter-spacing: -1px;
+    border: 1px solid #928774;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: #928774;
+}
+
+.add-icon{
+    background: #F55633;
+    color: #0D0D0D;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.todo-list{
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.todo-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.todo{
+    width: 600px;
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #928774;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    margin-bottom: 20px;
+}
+
+.check-name{
+    display: flex;
+    padding: 0 20px;
+}
+
+.check-name .status{
+    margin: 0 20px;
+    background-color: #F55633;
+}
+
+.check-name .task{
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    color: #928774;
+    letter-spacing: -1px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #595858; /* Optional: change the color to indicate it's done */
+  }
+
+.icons{
+    padding: 0 20px;
+}
+
+.icons .edit-todo{
+    margin: 0 20px;
+    color: #928774;
+}
+
+.icons .delete-todo{
+    color: #928774;
+}
+
+
+/* signup */
+
+.signup, .login{
+    width: 60vw;
+    height: 90vh;
+    background-color: #0D0D0D;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-family: Poppins;
+    font-size: 23px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #F55633;
+}
+
+.signup-form, .login-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input, .login-form input{
+    width: 380px;
+    height: 40px;
+    border: 1px solid #928774;
+    background-color: #1E1E1E;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    color: #928774;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    font-weight: 600px;
+}
+
+.signup label, .login label{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 15px;
+    color: #928774;
+    letter-spacing: -0.8px;
+}
+
+.signup-btn, .login-btn{
+    height: 40px;
+    background-color: #F55633;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #E8D6B8;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.have-account{
+    color: #DEDEDE;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: end;
+}
+
+.have-account .link{
+    color: #F55633;
+    text-decoration: underline;
+}
+
+.no-account{
+    color: #DEDEDE;
+    font-family: Poppins;
+    font-size: 14px;
+    text-align: end;
+}
+
+.no-account .link{
+    color: #F55633;
+    text-decoration: underline;
+}
+
+
